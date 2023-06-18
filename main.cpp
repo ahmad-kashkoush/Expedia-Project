@@ -1,6 +1,6 @@
-#include <iostream>
-
+#include "SystemRunner.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    SystemRunner sr;
+    sr.Run();
     return 0;
 }
