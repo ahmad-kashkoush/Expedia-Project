@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ak/Desktop/\ud83d\udcbbTechnical /CPPPractise Folder/OOP Projects MS/Expedia-Project/cmake-build-debug"
+			"value" : "/media/ak/sda1/D/Technical Learning/CPPPractise Folder/OOP Projects MS/Expedia-Project/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ak/Desktop/\ud83d\udcbbTechnical /CPPPractise Folder/OOP Projects MS/Expedia-Project/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/media/ak/sda1/D/Technical Learning/CPPPractise Folder/OOP Projects MS/Expedia-Project/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ak/Desktop/\ud83d\udcbbTechnical /CPPPractise Folder/OOP Projects MS/Expedia-Project"
+			"value" : "/media/ak/sda1/D/Technical Learning/CPPPractise Folder/OOP Projects MS/Expedia-Project"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ak/Desktop/\ud83d\udcbbTechnical /CPPPractise Folder/OOP Projects MS/Expedia-Project/cmake-build-debug"
+			"value" : "/media/ak/sda1/D/Technical Learning/CPPPractise Folder/OOP Projects MS/Expedia-Project/cmake-build-debug"
 		},
 		{
 			"name" : "Expedia_Project_IS_TOP_LEVEL",
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ak/Desktop/\ud83d\udcbbTechnical /CPPPractise Folder/OOP Projects MS/Expedia-Project"
+			"value" : "/media/ak/sda1/D/Technical Learning/CPPPractise Folder/OOP Projects MS/Expedia-Project"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

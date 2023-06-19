@@ -1,4 +1,4 @@
-/app/extra/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/app/extra/clion/bin/ninja/linux/x64/ninja -G Ninja -S "/home/ak/Desktop/💻Technical /CPPPractise Folder/OOP Projects MS/Expedia-Project" -B "/home/ak/Desktop/💻Technical /CPPPractise Folder/OOP Projects MS/Expedia-Project/cmake-build-debug"
+/app/extra/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/app/extra/clion/bin/ninja/linux/x64/ninja -G Ninja -S "/media/ak/sda1/D/Technical Learning/CPPPractise Folder/OOP Projects MS/Expedia-Project" -B "/media/ak/sda1/D/Technical Learning/CPPPractise Folder/OOP Projects MS/Expedia-Project/cmake-build-debug"
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/ak/Desktop/💻Technical /CPPPractise Folder/OOP Projects MS/Expedia-Project/cmake-build-debug
+-- Build files have been written to: /media/ak/sda1/D/Technical Learning/CPPPractise Folder/OOP Projects MS/Expedia-Project/cmake-build-debug

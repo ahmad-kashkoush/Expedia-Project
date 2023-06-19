@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Expedia_Project::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Expedia_Project-Debug-83d9188c445febdc884b.json",
+					"jsonFile" : "target-Expedia_Project-Debug-3e163982dd8bf456bd95.json",
 					"name" : "Expedia_Project",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/ak/Desktop/\ud83d\udcbbTechnical /CPPPractise Folder/OOP Projects MS/Expedia-Project/cmake-build-debug",
-		"source" : "/home/ak/Desktop/\ud83d\udcbbTechnical /CPPPractise Folder/OOP Projects MS/Expedia-Project"
+		"build" : "/media/ak/sda1/D/Technical Learning/CPPPractise Folder/OOP Projects MS/Expedia-Project/cmake-build-debug",
+		"source" : "/media/ak/sda1/D/Technical Learning/CPPPractise Folder/OOP Projects MS/Expedia-Project"
 	},
 	"version" : 
 	{
