@@ -7,7 +7,7 @@
 using namespace std;
 
 #define EXPEDIA_PROJECT_MENU_H
-class Menu{
+class ExpediaUtilities{
 public:
     // return choice number
     // add vector of choices

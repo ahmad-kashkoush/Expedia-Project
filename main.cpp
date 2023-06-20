@@ -1,9 +1,7 @@
 #include "SystemRunner.h"
-#include "Itenirary.h"
+#include "Testing.h"
 int main() {
-//    SystemRunner sr;
-//    sr.Run();
-    Itenerary it;
-
+//     TestUser();
+    TestItenerary();
     return 0;
 }

@@ -4,25 +4,20 @@
 
 #ifndef EXPEDIA_PROJECT_ITENIRARY_H
 #include "Menu.h"
+#include "expedia_flights_api.h"
+#include "expedia_hotels_api.h"
 #define EXPEDIA_PROJECT_ITENIRARY_H
 class IteneraryItem{
 public:
+    virtual IteneraryItem *Clone()=0;
     virtual double GetCost()=0;
-    virtual IteneraryItem* Clone(){return nullptr;}
-    virtual void AddInfo()=0;
-
+    virtual const string &ToString()=0;
 };
-class Flight: public IteneraryItem{
-public:
-   void AddInfo(){
-
-   }
-};
-class Hotel: public IteneraryItem{
+class IHotel: public IteneraryItem{
     double TotalNights;
     double PricePerNight;
 public:
-    Hotel(double a, double b):
+    IHotel(double a, double b):
     TotalNights(a), PricePerNight(b){}
     double GetCost(){
         return TotalNights*PricePerNight;
