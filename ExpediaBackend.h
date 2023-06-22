@@ -62,6 +62,7 @@ public:
         t.expiry_date=pp.getExpiryDate();
         t.ccv=pp.getPassword();
         t.id="lablabla";
+        P->setT(t);
         if(P->Withdraw(cost))
             return true;
         return false;
@@ -83,8 +84,27 @@ public:
                 return true;
             return false;
         }
+        Itenerary *itiniary = nullptr;
+        if ((itiniary = dynamic_cast<Itenerary*>(cpy))) {
+            vector<IteneraryItem*> confirmed_reservations;
 
+            for (IteneraryItem* sub_reservation : itiniary->GetListIteneraries()) {
+                bool is_confirmed = confirmReservation(*sub_reservation);
+                if (is_confirmed)
+                    confirmed_reservations.push_back(sub_reservation);
+                else {
+                    // If failed to reserve, cancel all what is confirmed so far!
+                    for (IteneraryItem* conf_reservation : confirmed_reservations)
+                        cancelReservation(*conf_reservation);
+                    return false;
+                }
+            }
+        } else
+            assert(false);
 
+        delete cpy;
+        cpy=nullptr;
+        return true;
     }
 };
 
