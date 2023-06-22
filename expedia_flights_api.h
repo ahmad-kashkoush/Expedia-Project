@@ -6,11 +6,8 @@
  */
 
 #ifndef EXPEDIA_FLIGHTS_API_H_
-#include "Itenirary.h"
 #define EXPEDIA_FLIGHTS_API_H_
-
-
-#include <ostream>
+#include "Itenirary.h"
 
 using namespace std;
 
