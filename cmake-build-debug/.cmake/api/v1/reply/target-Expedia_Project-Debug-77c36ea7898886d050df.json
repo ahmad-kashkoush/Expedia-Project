@@ -92,7 +92,12 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
 			]
 		}
 	],
@@ -106,7 +111,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Menu.h",
+			"path" : "Utilities.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -122,6 +127,31 @@
 		{
 			"backtrace" : 1,
 			"path" : "Testing.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "PaymentCard.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Customer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "CustomerManager.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "CustomerView.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ExpediaBackend.h",
 			"sourceGroupIndex" : 1
 		}
 	],
