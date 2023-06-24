@@ -191,7 +191,7 @@ private:
     Flight flight;
     FlightCustomerInfo flightCustomerInfo;
 public:
-    virtual IteneraryItem *Clone()override{
+    virtual IteneraryItem *Clone()const override{
         return  new FlightReservation(*this);
     }
     virtual double GetCost(){
@@ -200,6 +200,7 @@ public:
     virtual const string & ToString(){
        return flight.ToString();
     }
+    Flight GetFlight(){return flight;}
 
 };
 class IFlightMgr{
@@ -209,6 +210,7 @@ public:
     virtual string GetName()=0;
     virtual vector<Flight> FlightsVector()=0;
     virtual bool ReserveFlight(const FlightReservation &r)=0;
+    void setInfo(const FlightCustomerInfo &r){Info=r;}
 };
 class FlightTurkishMgr: public IFlightMgr{
 public:

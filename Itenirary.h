@@ -9,7 +9,7 @@
 class IteneraryItem{
 public:
     virtual IteneraryItem *Clone()const=0;
-    virtual double GetCost()=0;
+    virtual double GetCost()const=0;
     virtual const string &ToString()=0;
 };
 class Itenerary{
@@ -19,21 +19,19 @@ public:
     void AddIteneraryItem(IteneraryItem *item){
         Items.push_back(item->Clone());
     }
-    vector<IteneraryItem*> GetListIteneraries(){
-        return Items;
-    }
     double TotalCost(){
         double sum=0;
         for(auto item:Items){
             sum+=item->GetCost();
         }
     }
-    void ListItenerary(){
+    vector<string> ListItenerary() const {
+        vector<string> ret;
         for(auto item:Items){
-            cout<<"\t"<<item->ToString()<<"\n";
+            ret.push_back("\t"+item->ToString());
         }
+        return ret;
     }
-
 };
 
 

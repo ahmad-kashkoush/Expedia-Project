@@ -43,7 +43,7 @@ public:
     void setPassword(int password) {
         Password = password;
     }
-   virtual  PaymentCard *Clone()=0;
+   virtual  PaymentCard *Clone()const=0;
     virtual const string &ToString(){
         stringstream os;
         os << "UserName: " << UserName << " CardNumber: " << CardNumber << " ExpiryDate: " << ExpiryDate
@@ -64,7 +64,7 @@ public:
     void setAddress(const string &address) {
         Address = address;
     }
-    PaymentCard * Clone() override{
+    PaymentCard * Clone() const override{
         return new DebitCard(*this);
     }
     virtual const string & ToString()override{
@@ -75,7 +75,7 @@ public:
 };
 class CreditCard: public PaymentCard{
 public:
-    PaymentCard * Clone() override{
+    PaymentCard * Clone()const  override{
         return new CreditCard(*this);
     }
     virtual const string & ToString()override{

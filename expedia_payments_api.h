@@ -77,6 +77,9 @@ protected:
     TransactionInfo t;
 public:
     IPay(const TransactionInfo &t):t(t){}
+    void setT(const TransactionInfo &t){
+        this->t=t;
+    }
     virtual void setCardInfo()=0;
     virtual void setUserInfo()=0;
     virtual bool Withdraw(double val)=0;

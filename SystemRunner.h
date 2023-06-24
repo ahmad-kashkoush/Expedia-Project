@@ -1,6 +1,6 @@
 #ifndef EXPEDIA_PROJECT_EXPEDIA_H
 #include "User.h"
-#include "Menu.h"
+#include "Utilities.h"
 #define EXPEDIA_PROJECT_EXPEDIA_H
 
 class Expedia{

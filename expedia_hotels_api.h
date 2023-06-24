@@ -54,6 +54,7 @@ public:
 ////////////////////
 class Room{
 public:
+    string HotelName;
     string room_type;
     int available;
     double price_per_night;
@@ -82,7 +83,8 @@ protected:
     Room room;
     RoomRequest roomRequest;
 public:
-    virtual IteneraryItem *Clone(){
+    virtual IteneraryItem *Clone()const
+    override {
         return new RoomReservation(*this);
     }
     virtual double GetCost(){
@@ -91,11 +93,13 @@ public:
     virtual const string &ToString(){
         return room.ToString();
     }
+    Room GetRoom(){return room;}
 };
 class IHotelMgr{
 protected:
     RoomRequest request;
 public:
+    void setInfo(const RoomRequest &r){request=r;}
     virtual vector<Room> SearchRoom()=0;
     virtual const string &getName()=0;
 };
