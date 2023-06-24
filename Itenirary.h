@@ -3,12 +3,12 @@
 //
 
 #ifndef EXPEDIA_PROJECT_ITENIRARY_H
-#include "Menu.h"
+#include "Utilities.h"
 
 #define EXPEDIA_PROJECT_ITENIRARY_H
 class IteneraryItem{
 public:
-    virtual IteneraryItem *Clone()=0;
+    virtual IteneraryItem *Clone()const=0;
     virtual double GetCost()=0;
     virtual const string &ToString()=0;
 };
@@ -18,6 +18,9 @@ private:
 public:
     void AddIteneraryItem(IteneraryItem *item){
         Items.push_back(item->Clone());
+    }
+    vector<IteneraryItem*> GetListIteneraries(){
+        return Items;
     }
     double TotalCost(){
         double sum=0;
@@ -30,6 +33,7 @@ public:
             cout<<"\t"<<item->ToString()<<"\n";
         }
     }
+
 };
 
 
