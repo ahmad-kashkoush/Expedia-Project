@@ -8,8 +8,13 @@
 #define EXPEDIA_PROJECT_ITENIRARY_H
 class IteneraryItem{
 public:
+<<<<<<< HEAD
     virtual IteneraryItem *Clone()=0;
     virtual double GetCost()=0;
+=======
+    virtual IteneraryItem *Clone()const=0;
+    virtual double GetCost()const=0;
+>>>>>>> CustomerFeatures
     virtual const string &ToString()=0;
 };
 class Itenerary{
@@ -25,10 +30,12 @@ public:
             sum+=item->GetCost();
         }
     }
-    void ListItenerary(){
+    vector<string> ListItenerary() const {
+        vector<string> ret;
         for(auto item:Items){
-            cout<<"\t"<<item->ToString()<<"\n";
+            ret.push_back("\t"+item->ToString());
         }
+        return ret;
     }
 };
 
