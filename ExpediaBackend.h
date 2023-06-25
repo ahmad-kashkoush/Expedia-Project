@@ -41,7 +41,7 @@ public:
     bool unchargeCost(double cost, PaymentCard &p){
         return true;
     }
-    bool cancelReservation(const IteneraryItem &it){
+    bool cancelReservation(const IteneraryItem &it, PaymentCard &pp){
         return true;
     }
     bool chargeCost(double cost, PaymentCard &pp){
